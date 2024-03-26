@@ -8,16 +8,15 @@ public class FillingArray {
         ArrayList fillingArray = new ArrayList();
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i < i + 1 & i > 0; i++) {
-            System.out.println("Введите элемент для добавления в лист (для окончания введите \"stop\"): ");
+            System.out.println("Введите элемент для добавления (для окончания введите \"stop\"): ");
             String next = scanner.nextLine();
-            fillingArray.add(next);
             switch (next) {
                 case "stop":
                     i = -1;
-                    fillingArray.remove("stop");
                     System.out.println(fillingArray);
                     break;
             }
+            fillingArray.add(next);
         }
     }
 }
