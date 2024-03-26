@@ -17,8 +17,8 @@ public class SearchWord {
         int normalCount = normalSearch.search(content, searchWord);
         int regularCount = regularSearch.search(content, searchWord);
 
-        System.out.println("Слово \"" + searchWord + "\" найдено " + normalCount + " раз(а) с помощью обычного поиска.");
-        System.out.println("Слово \"" + searchWord + "\" найдено " + regularCount + " раз(а) с помощью регулярных выражений.");
+        System.out.println("С помощью обычного поиска слово найдено " + normalCount + " раз(а).");
+        System.out.println("С помощью регулярных выражений слово найдено " + regularCount + " раз(а).");
     }
 
     private static String readFile(String file) {
