@@ -8,9 +8,9 @@ public class SearchWord {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите слово которое хотите найти:");
         String searchWord = sc.nextLine();
-        String file = "WarAndPeace.txt";
-        String content = readFile(file);
+        String content = readFile("WarAndPeace.txt");
         sc.close();
+
         TextSearch normalSearch = new NormalSearch();
         TextSearch regularSearch = new RegularSearch();
 
