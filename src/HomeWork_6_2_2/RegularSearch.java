@@ -3,7 +3,6 @@ package HomeWork_6_2_2;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 class RegularSearch implements TextSearch {
 
     @Override
