@@ -7,13 +7,15 @@ public class FillingArray {
     public static void main(String[] args) {
         ArrayList fillingArray = new ArrayList();
         Scanner scanner = new Scanner(System.in);
-        for (int i = 1; i < i + 1 & i > 0; i++) {
+        for (int i = 1; i < i + 1 && i > 0; i++) {
             System.out.println("Введите элемент для добавления (для окончания введите \"stop\"): ");
             String next = scanner.nextLine();
             switch (next) {
                 case "stop":
                     i = -1;
-                    System.out.println(fillingArray);
+                    for (int j = 0; j < fillingArray.size(); j++) {
+                        System.out.print(fillingArray.get(j) + " ");
+                    }
                     break;
             }
             fillingArray.add(next);
