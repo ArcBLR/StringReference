@@ -7,12 +7,12 @@ class RegularSearch implements TextSearch {
 
     @Override
     public int search(String text, String searchWord) {
-        int count = 0;
+        int summ = 0;
         Pattern pattern = Pattern.compile("\\b" + searchWord + "\\b");
         Matcher matcher = pattern.matcher(text);
         while (matcher.find()) {
-            count++;
+            summ++;
         }
-        return count;
+        return summ;
     }
 }
